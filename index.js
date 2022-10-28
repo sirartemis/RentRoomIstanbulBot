@@ -94,7 +94,7 @@ bot.on('callback_query', query => {
     },
     'room': async () => {
       await bot.sendMessage(chatId, 'С одной кроватью')
-      bot.sendMediaGroup(chatId, [
+      await bot.sendMediaGroup(chatId, [
         {
           type: 'photo',
           media: 'AgACAgQAAxkBAAICzGNW_TshBAOCNj09-YwOBolGXqVLAALLujEbD7BJUjk13v00isgBAQADAgADeQADKgQ'
@@ -114,7 +114,7 @@ bot.on('callback_query', query => {
       ])
 
       await bot.sendMessage(chatId, 'С одной кроватью')
-      bot.sendMediaGroup(chatId, [
+      await bot.sendMediaGroup(chatId, [
         {
           type: 'photo',
           media: 'AgACAgQAAxkBAAIFSmNarGbdia6bAwF9wcpDJ-9MqsBgAAJFujEbQ-3IUuSjeEY2Qv9fAQADAgADcwADKgQ'
@@ -133,7 +133,7 @@ bot.on('callback_query', query => {
         },
       ])
       await bot.sendMessage(chatId, 'С двумя кроватями')
-      bot.sendMediaGroup(chatId, [
+      await bot.sendMediaGroup(chatId, [
         {
           type: 'photo',
           media: 'AgACAgQAAxkBAAIGB2NcMjyM_F2Vch9nej300iOWUWZWAAKsujEbdArIUg-luSXnc2lHAQADAgADeAADKgQ'
