@@ -1,4 +1,4 @@
-# fly.toml file generated for rent-room-bot on 2022-10-28T18:31:13+03:00
+# fly.toml file generated for rent-room-bot on 2022-10-28T19:52:46+03:00
 
 app = "rent-room-bot"
 kill_signal = "SIGINT"

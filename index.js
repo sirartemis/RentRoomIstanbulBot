@@ -1,8 +1,7 @@
 require('dotenv').config()
 const telegramAPI = require('node-telegram-bot-api')
 
-const bot = new telegramAPI(process.env.TELEGRAM_TOKEN, { webHook: process.env.PORT })
-bot.setWebHook(`${process.env.APP_URL}/bot${process.env.TELEGRAM_TOKEN}`)
+const bot = new telegramAPI(process.env.TELEGRAM_TOKEN, { polling: true })
 
 bot.setMyCommands([
   { command: '/start', description: 'запустить/перезапустить  бот' },
@@ -38,7 +37,7 @@ const infoMenu = message => {
 const startingBot = message => {
   const chatId = message.chat.id
   bot.sendMessage(chatId, 'Добро пожаловать в сервис брони отеля в самом центре Стамбула!')
-  bot.sendPhoto(message.chat.id, './photos/photo_2022-10-24_18-43-43.jpg', comandsList)
+  bot.sendPhoto(message.chat.id, 'AgACAgIAAxkBAAIF22NcLBi1FT8ccdz_Yj8pvkaIbqsWAAImwjEbbh-xSjbkx8YRy3RYAQADAgADeQADKgQ', comandsList)
 }
 
 const rentRoom = message => {
