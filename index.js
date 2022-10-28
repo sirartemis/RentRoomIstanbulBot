@@ -92,8 +92,8 @@ bot.on('callback_query', query => {
     'price': () => {
       bot.sendMessage(chatId, 'Стоимость аренды от 700 лир за ночь')
     },
-    'room': () => {
-      bot.sendMessage(chatId, 'С одной кроватью')
+    'room': async () => {
+      await bot.sendMessage(chatId, 'С одной кроватью')
       bot.sendMediaGroup(chatId, [
         {
           type: 'photo',
@@ -113,7 +113,7 @@ bot.on('callback_query', query => {
         },
       ])
 
-      bot.sendMessage(chatId, 'С одной кроватью')
+      await bot.sendMessage(chatId, 'С одной кроватью')
       bot.sendMediaGroup(chatId, [
         {
           type: 'photo',
@@ -132,7 +132,7 @@ bot.on('callback_query', query => {
           media: 'AgACAgQAAxkBAAIFTWNarO7IV8wE-qqv_njHYaosC_NJAAJIujEbQ-3IUtydRnD3W3TMAQADAgADcwADKgQ'
         },
       ])
-      bot.sendMessage(chatId, 'С двумя кроватями')
+      await bot.sendMessage(chatId, 'С двумя кроватями')
       bot.sendMediaGroup(chatId, [
         {
           type: 'photo',
