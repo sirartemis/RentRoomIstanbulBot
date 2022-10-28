@@ -113,7 +113,7 @@ bot.on('callback_query', query => {
         },
       ])
 
-      bot.sendMessage(chatId, 'С двумя кроватями')
+      bot.sendMessage(chatId, 'С одной кроватью')
       bot.sendMediaGroup(chatId, [
         {
           type: 'photo',
@@ -130,6 +130,33 @@ bot.on('callback_query', query => {
         {
           type: 'photo',
           media: 'AgACAgQAAxkBAAIFTWNarO7IV8wE-qqv_njHYaosC_NJAAJIujEbQ-3IUtydRnD3W3TMAQADAgADcwADKgQ'
+        },
+      ])
+      bot.sendMessage(chatId, 'С двумя кроватями')
+      bot.sendMediaGroup(chatId, [
+        {
+          type: 'photo',
+          media: 'AgACAgQAAxkBAAIGB2NcMjyM_F2Vch9nej300iOWUWZWAAKsujEbdArIUg-luSXnc2lHAQADAgADeAADKgQ'
+        },
+        {
+          type: 'photo',
+          media: 'AgACAgQAAxkBAAIGCGNcMqvsQZuOszUkNn6fzc4OsXfGAAKtujEbdArIUn3oBCFOXhYEAQADAgADeQADKgQ'
+        },
+        {
+          type: 'photo',
+          media: 'AgACAgQAAxkBAAIGCWNcMsvbNmuhLsc3IGokhHQEdlZvAAKuujEbdArIUgy32EzH0H0qAQADAgADeAADKgQ'
+        },
+        {
+          type: 'photo',
+          media: 'AgACAgQAAxkBAAIGCmNcMuHEAdyGL3_rsjNNza8KwD0BAAKvujEbdArIUuKdyy6vXRk3AQADAgADeQADKgQ'
+        },
+        {
+          type: 'photo',
+          media: 'AgACAgQAAxkBAAIGDGNcM0Dlsj4hZt8hpcLJvHB3t8IzAAKwujEbdArIUp7sCJir3EuhAQADAgADbQADKgQ'
+        },
+        {
+          type: 'photo',
+          media: 'AgACAgQAAxkBAAIGDWNcM2eg6cQ8vK-uGu6Rz_MWTqQYAAKxujEbdArIUnQ4U1eHbeuZAQADAgADeQADKgQ'
         },
       ])
     },
