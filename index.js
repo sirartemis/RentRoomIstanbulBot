@@ -1,7 +1,8 @@
 require('dotenv').config()
 const telegramAPI = require('node-telegram-bot-api')
 
-const bot = new telegramAPI(process.env.TELEGRAM_TOKEN, { polling: true })
+const bot = new telegramAPI(process.env.TELEGRAM_TOKEN, { webHook: process.env.PORT })
+bot.setWebHook(`${process.env.APP_URL}/bot${process.env.TELEGRAM_TOKEN}`)
 
 bot.setMyCommands([
   { command: '/start', description: 'запустить/перезапустить  бот' },
